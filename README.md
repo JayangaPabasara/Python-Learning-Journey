@@ -1,4 +1,7 @@
-"# Python-Learning-Journey"
+### Python-Learning-Journey
+
+--------------------------
+
 ## Day-01-Pythong Learning 6/16/2026
 
 # writing my first python program
