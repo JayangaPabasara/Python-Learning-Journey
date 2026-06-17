@@ -17,7 +17,7 @@ has_graduated = True
 middle_name = None
 
 # Check the type of any varibale using type()
-print(type(score))
+print(type(score)) # <class 'int'>
 print(type(price))       
 print(type(first_name))
 print(type(middle_name))
