@@ -147,6 +147,135 @@ print(int(flag))        # 1  — surprising! True converts to 1, False converts 
 
 ---
 
-## 📅 Day 02 — June 26, 2026
+## 📅 Day 03 — June 26, 2026
 
+### What I Learned Today
 
+Covered Week 2 — Operators and Control Flow.
+
+#### 1. Operators
+
+**Arithmetic operators** — did the maths I learned at school, plus two new ones:
+
+```python
+a = 10
+b = 3
+
+print(a / b)   # 3.3333...  — division always returns a float
+print(a // b)  # 3          — floor division, rounds down
+print(a % b)   # 1          — modulo, gives the remainder
+print(a ** b)  # 1000       — exponent, 10 to the power of 3
+```
+
+**Comparison operators** — compare two values and always return `True` or `False`.
+
+```python
+name = "Kasun"
+print(name == "Kasun")   # True
+print(name == "kasun")   # False — Python is case-sensitive!
+```
+
+**Logical operators** — combine multiple conditions using `and`, `or`, `not`.
+
+```python
+age = 20
+has_id = True
+
+print(age >= 18 and has_id == True)   # True — both conditions true
+print(age < 18 or age > 100)          # False — both conditions false
+print(not age > 18)                    # False — reverses True to False
+```
+
+---
+
+#### 2. Control Flow — Making Decisions
+
+**if / elif / else** — lets the program choose what to do based on a condition.
+
+```python
+grade = 75
+
+if grade >= 90:
+    print("Grade: A")
+elif grade >= 80:
+    print("Grade: B")
+elif grade >= 70:
+    print("Grade: C")        # this runs — 75 is >= 70
+elif grade >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
+```
+
+**for loops** — repeat code a fixed number of times.
+
+```python
+for i in range(1, 11):
+    result = 5 * i
+    print("5 x", i, "=", result)
+```
+
+**while loops** — repeat code until a condition becomes `False`.
+
+```python
+count = 1
+while count <= 5:
+    print("Count:", count)
+    count = count + 1     # must update the variable, or the loop runs forever
+```
+
+**break and continue** — control loop execution.
+
+```python
+for number in range(1, 11):
+    if number == 6:
+        break              # stops the loop completely
+
+for number in range(1, 11):
+    if number % 2 == 0:
+        continue           # skips this number, keeps looping
+    print(number)          # prints only odd numbers
+```
+
+**match statement** — switch statement.
+
+```python
+day = 3
+
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case 3:
+        print("Wednesday")
+    case 4:
+        print("Thursday")
+    case 5:
+        print("Friday")
+    case _:                        # Default Case
+        print("Invalid day")
+```
+
+---
+
+### ✅ Today's Progress
+- [x] Arithmetic operators (including floor division `//`, modulo `%`, exponent `**`)
+- [x] Comparison operators
+- [x] Logical operators (`and`, `or`, `not`)
+- [x] if / elif / else statements
+- [x] for loops with `range()`
+- [x] while loops
+- [x] break and continue
+- [x] match statement
+
+---
+
+### 💡 Key Reminder
+> In Python, indentation is not just for readability — it defines which code belongs inside a block (like an `if` statement or a loop). Getting the indentation wrong causes errors or unexpected behavior.
+
+> Always update the loop variable inside a `while` loop, or it will run forever.
+
+---
+
+*Day 03 of 365 — Python Learning Journey 🚀*
